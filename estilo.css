@@ -1,0 +1,1004 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+header {
+    background-color: #3c586e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    user-select: none;
+    border-bottom: 3px gray solid;
+}
+header a{
+    color: orange;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.check-m{
+    display: none;
+}
+
+.logobar{
+  width: 250px; 
+  height: auto; 
+  margin-right: 10px; 
+}
+
+nav{
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+nav li:hover {
+    background-color: #4C7798;
+}
+
+nav a {
+    padding: 10px;
+    color: white;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: changeBackground linear infinite; 
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima del fondo */
+}
+
+.login{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  height: auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+.enviar {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: block; /* Convierte el botón en un bloque */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.enviar:hover {
+  background-color: #555;
+}
+
+
+.contacto {
+  text-align: center;
+}
+.contacto p{
+  margin: 4px 0px;
+}
+
+.icono {
+  display: inline;
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.font-inicio{
+  margin-top: 150px;
+  margin-left: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 80px;
+}
+/* Estilos para el contenedor de valores */
+.cont_valores {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.dv_1{
+  animation: slide-up-down 1s forwards;
+  animation-delay: 1s;
+}
+.dv_2{
+  animation: slide-up-down 1s forwards;
+  animation-delay: 2s;
+}
+.dv_3{
+  animation: slide-up-down 1s forwards;
+  animation-delay: 3s;
+}
+.dv_4{
+  animation: slide-up-down 1s forwards;
+  animation-delay: 4s;
+}
+
+
+/* Estilos para cada cuadro de valor */
+.div_v {
+    width: 60px;
+    display: inline-block;
+    text-align: center; 
+    padding: 60px; 
+    margin: 10px 2% 10px 2%;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #fff; /* Color del texto */
+    border-radius: 20px;
+}
+
+.div_v:hover{
+  animation:vibrate 0.5s linear both;
+}
+
+/* Estilos para la imagen */
+.img_v {
+    place-items: center;
+    max-width: 100%; /* Ancho máximo para la imagen */
+    height: auto; /* Mantener la proporción de aspecto */
+    margin-bottom: 0 auto; /* Espacio entre la imagen y el nombre */
+}
+
+/* Estilos para el nombre del valor */
+.texto{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.div_v span {
+  display: inline-block;
+  font-size: 18px; /* Tamaño de fuente */
+  font-weight: bold;
+  margin-top: 10px;
+  color: black;
+}
+
+/* Estilos para la sección de banner */
+#banner{
+    margin-top: 40px;
+    background-image: url('img/imagen_principal.jfif'); /* Imagen de fondo */
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    color: #fff; /* Color del texto */
+    text-align: center;
+    padding: 100px 0; /* Espaciado interior arriba y abajo */
+}
+
+#banner h2 {
+    font-size: 48px; /* Tamaño de fuente del título */
+}
+
+#nosotros{
+    background-image: url('img/sobre_nosotros.jfif'); /* Imagen de fondo */
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    color: #fff; /* Color del texto */
+    text-align: center;
+    padding: 100px 0; /* Espaciado interior arriba y abajo */
+}
+
+#proyectos{
+    background-image: url('img/casa1.jfif'); /* Imagen de fondo */
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    color: #fff; /* Color del texto */
+    text-align: center;
+    padding: 100px 0; /* Espaciado interior arriba y abajo */
+}
+
+#calculadora{
+    background-image: url('img/calculadora.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    color: #fff; /* Color del texto */
+    text-align: center;
+    padding: 100px 0; /* Espaciado interior arriba y abajo */
+}
+
+/* Estilos para las otras secciones */
+section {
+    padding: 40px 0; /* Espaciado interior arriba y abajo */
+    text-align: center;
+    height: 200px;
+    }
+
+section h2 {
+  padding-top: 10px;
+  font-size: 28px; /* Tamaño de fuente de los títulos de sección */
+  margin: 0;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+section p {
+  font-size: 18px; /* Tamaño de fuente de los párrafos */
+  line-height: 1.5; 
+  padding: 10px;
+  background-color: rgb(0, 0, 0, 0.4);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los enlaces "Leer más" o "Ver Proyectos" */
+.leer-mas{
+    text-decoration: none; /* Quitar subrayado predeterminado */
+    color: black;
+    background-image: linear-gradient(to right, rgb(255, 255, 255, 0.8) 50%, rgb(60, 88, 110) 50%);
+    background-size: 250%;
+    background-position: left;
+    font-weight: bold; /* Texto en negrita */
+    transition: background-position .5s ease;
+    padding: 10px;
+}
+
+.leer-mas:hover {
+    background-position: right;
+    color: white;
+}
+
+/* Configura la opacidad inicial en 0 y una transición */
+.aparecer {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Agrega la clase 'activo' para mostrar el elemento */
+.aparecer.activo {
+    opacity: 1;
+    /* Puedes agregar otros estilos aquí para personalizar la animación */
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.cont_nosotros_a {
+    display: flex;
+    flex: row;
+    flex-direction: row-reverse; 
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.cont_nosotros_b {
+    display: flex;
+    flex: row;
+    flex-direction: 0; 
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.img_nosotros {
+    flex: 1; /* Hace que la imagen ocupe todo el espacio disponible */
+    padding: 20px; /* Añade un espacio alrededor de la imagen (ajusta según sea necesario) */
+}
+
+.text_nosotros {
+    flex: 1; /* Hace que el texto ocupe todo el espacio disponible */
+    padding: 20px; /* Añade un espacio alrededor del texto (ajusta según sea necesario) */
+}
+.text_nosotros p{
+    text-indent: 40px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.text_nosotros h1{
+    background-color: rgba(47, 142, 217, 0.5);
+    color: white;
+}
+
+/* Añade estilos adicionales según sea necesario para la imagen y el texto */
+.img_nosotros img {
+    max-width: 90%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    min-width: 300px;
+    border-radius: 50px 0px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+.proyecto{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 2%;
+  width: 93%;
+  height: 250px;
+
+  transition: .5s, color .10s;
+  animation: slide-up 1s forwards;
+}
+
+.proyecto:hover{
+  background-color: rgba(47, 142, 217, 0.5);
+  border-color: rgba(47, 142, 217, 0.5);
+}
+
+.proyecto-img{
+  width: 100%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.proyecto-img img {
+    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.sep{
+    height: 50px;
+}
+
+.proyecto-text{
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.proyecto-text p {
+    display: inline-block;
+  color: black;
+  background-color: white;
+  font-size: 18px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.proyecto_h1{
+    background-color: rgba(47, 142, 217, 0.5);
+    color: white;
+    padding: 0 50px;
+    margin: 0;
+}
+.proyecto_p{
+    text-indent: 40px;
+    text-align: justify;
+    font-weight: 600;  
+    margin: 20px 30px;
+}
+
+.proyecto_uno_img{
+    width: 90%;
+    height: 300px;
+    overflow: hidden; /* Para recortar la imagen si es necesario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.proyecto_uno_img img {
+    width: 100%;
+    height: auto;
+    display: block; /* Esto es importante para eliminar el espacio adicional debajo de la imagen */
+    object-fit: contain;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+.opcion {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 2%;
+  min-width: 170px;
+  max-width: 270px;
+  height: 270px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: .5s, color .10s;
+
+  animation: slide-up 1s forwards;
+}
+
+.opcion:hover{
+  background-color: #5E86A5;
+  border-color: #5E86A5;
+  box-shadow: 0 8px 8px 0 white,0 8px 8px 0 white;
+  transform: translate(0px,5px);
+}
+
+.imagen{
+  width: 150px;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.texto{
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.texto p {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.container{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px 5px black;
+  padding: 20px 0px 0px 0px;
+  margin: 2%;
+  width: 95%;
+  position: relative;
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 20;
+
+  animation: slide-up 1s forwards;
+}
+
+.subtitulo_, .titulo_{
+  color: white;
+  background-color: rgba(94, 134, 165, .5);
+  padding: auto;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.titulo_{
+  margin: 0;
+  background-color: rgba(94, 134, 165, .6);
+}
+
+
+.cont_form {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  
+  position: relative;
+}
+
+.contenedor_calc, .contenedor_guia{
+  flex: 2;
+  min-width: 350px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: rgba(94, 134, 165, .5);
+  border: 2px solid white;
+}
+
+.contenedor_calc{
+  border-radius: 20px;
+  height: auto;
+}
+
+.contenedor_guia{
+  border-radius: 20px;
+  height: auto;
+}
+
+
+form {
+    text-align: center;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+.cont_form input[type="number"] {
+  text-align: center;
+  background-color: dimgray;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+.cont_form input[type="number"]::placeholder {
+  color: white;
+}
+
+.doble_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.calc_btn{
+    background-color: #3c586e; 
+    font-weight: bold;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    margin-left:50px;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.2s ease; /* Efecto de transición al pasar el mouse */
+}
+
+.calc_btn:hover {
+    background-color: #7BA9CC; /* Color de fondo al pasar el mouse */
+    
+}
+
+
+.result {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-gap: 10px; /* Espacio entre los elementos */
+}
+
+.result-item {
+    background-color: dimgray;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.result-item p {  
+    margin: 0;
+    font-weight: bold;
+}
+
+.result-item span {
+    font-size: 18px;
+  
+}
+
+.calc_btn:active{
+  background-color: white; /* Color de fondo al pasar el mouse */
+  color: black;
+  font-weight: bold;
+  animation:vibrate 0.1s linear both;
+}
+
+.anuncio{
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  border: 4px solid white;
+  box-shadow: 0 0 0 4px green;
+  margin-top: 20px;
+  padding: 0px 10px;
+
+  animation:jello-horizontal 7s ease-out infinite;
+  animation-delay: 5s;
+}
+
+.icono_w{
+  display: inline;
+  width: 40px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/*--------------------------------------------------------*/
+.guia{
+  overflow: auto;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid gray;
+  height: 400px;
+}
+
+.guia ul, .guia ol {
+    margin: 0;
+    padding: 0;
+}
+
+.guia li {
+    padding: 5px; 
+}
+
+.list{
+  list-style-type: circle;
+  text-align: left;
+  margin-left: 30px !important;
+}
+
+.sub-t{
+  padding: 10px !important; 
+  color: white;
+  font-weight: bold;
+  background-color: rgba(224, 186, 1, 1.0);
+}
+
+.guia_img img{
+  max-height:200px;
+}
+
+#formulario {
+    margin: 20px;
+}
+
+.table_container{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.9); /* Ajusta el último valor para la opacidad (0 = transparente, 1 = completamente opaco) */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar la tabla */
+  border-radius: 8px; /* Borde redondeado para suavizar los bordes */
+}
+
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f2f2f2; /* Color de fondo para las celdas de encabezado */
+}
+
+/* Cambia los colores de fondo y texto cuando se pasa el mouse sobre una fila */
+table tr:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Color de fondo ligeramente transparente al pasar el mouse */
+}
+
+/* Estilo para las celdas pares e impares */
+table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02); /* Color de fondo ligeramente transparente para filas pares */
+}
+
+ th:nth-child(1) {
+        width: 40%;
+    }
+
+    th:nth-child(2) {
+        width: 15%;
+    }
+
+    th:nth-child(3) {
+        width: 15%;
+    }
+
+    th:nth-child(4) {
+        width: 10%;
+    }
+
+.th-total{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+table tr th input{
+     width: 100%;
+}
+
+.short{
+    display: inline-block;
+    width: 40% !important;
+    margin: 0 !important;
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------------- */
+
+#cerrarSesionBtn {
+  background-color: #3498db; /* Fondo azul para el botón */
+  color: #fff; /* Texto blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#confirmacionCerrarSesion{
+  position: fixed;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Centra en la pantalla */
+  background-color: #fff;
+  padding: 70px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  display: none; /* Inicialmente oculto */
+}
+
+#confirmarCerrarSesion, #cancelarCerrarSesion {
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#confirmarCerrarSesion {
+  background-color: #27ae60; /* Fondo verde para el botón de confirmar */
+  color: #fff; /* Texto blanco */
+  margin-right: 30px;
+}
+
+#cancelarCerrarSesion {
+  background-color: #e74c3c; /* Fondo rojo para el botón de cancelar */
+  color: #fff; /* Texto blanco */
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+.emergente{
+    z-index: 999;
+}
+
+/*-------------------------------------------------------------------------*/
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  width: 100%;
+}
+
+
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+
+@keyframes changeBackground {
+    0%, 33.33% {
+        opacity: 1;
+    }
+    33.34%, 100% {
+        opacity: 0;
+    }
+}           
+  
+@keyframes bounce {
+    0% {transform: translateX(0) rotate(-90deg);}
+    25% {transform: translateX(0) rotate(-90deg);}
+    50% {transform: translateX(0) rotate(-90deg);}
+    75% {transform: translateX(-10px) rotate(-90deg);}
+    100% {transform: translateX(0) rotate(-90deg);}
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: ;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up-down{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes vibrate{
+  0%{
+    transform:translate(0)
+  }
+  20%{
+    transform:translate(-2px,2px)
+  }
+  40%{
+    transform:translate(-2px,-2px)
+  }60%{
+    transform:translate(2px,2px)
+  }80%{
+    transform:translate(2px,-2px)
+  }100%{
+    transform:translate(0)
+  }
+}
+
+@keyframes slide-right{
+  0%{
+    transform:translateX(10px);
+    opacity: 0;
+  }
+  100%{
+    transform:translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes jello-horizontal{
+  0%{
+    transform:scale3d(1,1,1)
+  }
+  5%{
+    transform:scale3d(1.25,.75,1)
+  }
+  10%{
+    transform:scale3d(.75,1.25,1)
+  }
+  15%{
+    transform:scale3d(1.15,.85,1)
+  }
+  20%{
+    transform:scale3d(.95,1.05,1)
+  }
+  25%{
+    transform:scale3d(1.05,.95,1)
+  }
+  30%{
+    transform:scale3d(1,1,1)
+  }
+}
+
+@media (max-width: 768px) {
+    .background img {
+        object-position: center top; /* Alinea la imagen en la parte superior */
+    }
+    
+    .background {
+        justify-content: flex-start; /* Alinea el contenido en la parte superior */
+        align-items: flex-start; /* Alinea el contenido en la parte izquierda */
+    }
+
+    .font-inicio {
+        margin-top: 50px; /* Ajusta el margen superior */
+        margin-left: 10px; /* Ajusta el margen izquierdo */
+        font-size: 40px; /* Ajusta el tamaño de fuente */
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Ocultar la lista de navegación por defecto */
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        display: none;
+        background-color: #3c586e;
+        z-index: 1000; /* Añadimos un z-index alto */
+    }
+    /* Alinear elementos del menú verticalmente */
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        margin: 0;
+        position: relative;
+        z-index: 999;
+    }
+    /* Mostrar la lista de navegación cuando el input esté seleccionado (haga clic en el icono) */
+    #menu-toggle:checked + .menu-icon + nav ul {
+        display: block;
+    }
+
+}

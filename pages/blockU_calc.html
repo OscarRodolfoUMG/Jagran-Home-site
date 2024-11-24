@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructora JAGRAN</title>
+    <link rel="shortcut icon" href="../logo/icono_JAGRAN.jfif" />
+    <link rel="stylesheet" href="../estilo.css" />
+  </head>
+
+  <body>
+    <div class="background">
+      <img src="../img/casa3.jfif" alt="Fondo 1" style="opacity: 1" />
+      <img src="../img/casa2.jfif" alt="Fondo 2" />
+      <img src="../img/casa1.jfif" alt="Fondo 3" />
+    </div>
+
+    <div class="content">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img class="logobar" src="../logo/logobar_JAGRAN.jfif" alt="logo" />
+          </a>
+        </div>
+        <input class="check-m" type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <nav>
+          <ul>
+            <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="proyectos_index.html">Proyectos</a></li>
+            <li>
+              <a href="inicio_calculadora.html">Calculadora de Materiales</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <h1 class="titulo_">Block U</h1>
+
+        <div class="cont_form">
+          <div class="contenedor_calc">
+            <h2 class="subtitulo_">Calculadora de Materiales</h2>
+
+            <form id="calculator-form">
+              <div class="form-group">
+                <label for="metros-cuadrados"
+                  >Metros Lineales a Construir:</label
+                >
+                <input
+                  type="number"
+                  id="metros-cuadrados-block"
+                  name="metros-cuadrados"
+                  placeholder="Ejemplo: 100.00"
+                  required
+                />
+                <button class="calc_btn" type="button" id="calcular-btn">
+                  Calcular
+                </button>
+              </div>
+
+              <div class="result">
+                <div class="result-item">
+                  <p>Blocks U:</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="block-result">0</span>
+                </div>
+
+                <div class="result-item">
+                  <p>Saco Cemento (45kg):</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="cemento-result">0</span>
+                </div>
+
+                <div class="result-item">
+                  <p>Metro Cúbico Arena :</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="arena-result">0</span>
+                </div>
+
+                <div class="result-item">
+                  <p>Metro Cúbico Piedrin :</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="piedrin-result">0</span>
+                </div>
+
+                <div class="result-item">
+                  <p>Hierro No. 3:</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="hierro3-result">0</span>
+                </div>
+
+                <div class="result-item">
+                  <p>Hierro No. 2:</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="hierro2-result">0</span>
+                </div>
+              </div>
+            </form>
+
+            <div class="anuncio">
+              <h2>
+                Cotízalo con nosotros Constructora JAGRAN
+                <img class="icono_w" src="../logo/whatsapp-logo.png" />
+                +502 5961-1497
+              </h2>
+            </div>
+          </div>
+
+          <div class="contenedor_guia">
+            <h2 class="subtitulo_">Guia de Construcción</h2>
+
+            <div class="guia">
+              <ul>
+                <li class="sub-t">Materiales y herramientas necesarios:</li>
+
+                <li class="list">Blocks.</li>
+                <li class="list">Cemento.</li>
+                <li class="list">Arena.</li>
+                <li class="list">Nivel de burbuja.</li>
+                <li class="list">Hilo de Nylon y clavos.</li>
+                <li class="list">Martillo.</li>
+                <li class="list">Paleta y llana.</li>
+                <li class="list">Pala.</li>
+                <li class="list">Manguera de jardín.</li>
+                <li class="list">Guantes de trabajo y gafas de seguridad.</li>
+
+                <li class="sub-t">Planificación y diseño:</li>
+
+                <p>
+                  Verifica las regulaciones locales y obtén los permisos
+                  necesarios, decide la ubicación y dimensiones del muro. Marca
+                  la línea de base del muro usando estacas y cuerda, normalmente
+                  los levantamientos de muro de blocks suelen ir sobre soleras,
+                  losas, o sobre el cimiento. Considera una buena cantidad de
+                  agua ya que para pegar los blocks se necesita que esten
+                  mojados para que al momento de pegarlo no absorban el agua del
+                  mortero de cemento y pegue debidamente.
+                </p>
+
+                <div class="guia_img">
+                  <img src="../img/calc/muro/guia_muro_1.jfif" />
+                </div>
+
+                <li class="sub-t">Preparación de la mezcla de mortero:</li>
+
+                <p>
+                  Mezcla el mortero siguiendo las instrucciones del fabricante,
+                  generalmente una parte de cemento por tres partes de arena,
+                  mezcla la arena y el cemento hasta lograr que un color
+                  uniforme. Añade agua gradualmente hasta obtener una mezcla
+                  homogénea y manejable.
+                </p>
+                <div class="guia_img">
+                  <img src="../img/calc/muro/guia_muro_2.jfif" />
+                </div>
+
+                <li class="sub-t">Colocación de guias:</li>
+
+                <p>
+                  Aplica una capa de mortero en la base de concreto o en el
+                  primer block y colócalo en la esquina del muro, luego
+                  asegurese de que esté nivelado y alineado con las marcas de
+                  referencia, coloque un segundo block pegandolo con mortero en
+                  la otra esquina del muro.
+                </p>
+
+                <div class="guia_img">
+                  <img src="../img/calc/muro/guia_muro_3.jfif" />
+                </div>
+
+                <p>
+                  Coloque el hilo de nylon en la esquinas de ambos blocks en el
+                  lado de contrario a su espacio de trabaje, asegurese que el
+                  hylo se encuentre libre y estirado de esta forma asegura que
+                  la hilada de block este recta y nivelada.
+                </p>
+
+                <li class="sub-t">Colocación de blocks adicionales:</li>
+
+                <p>
+                  Aplica mortero en los extremos y la parte inferior de cada
+                  block antes de colocarlo. A medida que avances en la
+                  construcción, asegúrate de que los block estén alineados tanto
+                  vertical con ayuda de un nivel o plomo y horizontalmente
+                  apoyandote con el hilo de nylon.
+                </p>
+
+                <div class="guia_img">
+                  <img src="../img/calc/muro/guia_muro_4.jfif" />
+                </div>
+
+                <p>
+                  Procura dejar un espacio de 1 centimetro entre cada block y
+                  rellenar el espacio entre ellos debidamente con mortero.
+                </p>
+
+                <li class="sub-t">Terminación del muro de block:</li>
+
+                <p>
+                  Continua el proceso de colorcar los blocks guia y rellenar con
+                  blocks hasta alcanzar una determinada altura, se recomienda no
+                  pasar de 1.20 metros que vendrian siendo unas 5 o 6 hiladas
+                  dependiente de las dimensiones de block, esto para evitar que
+                  el muro tambalee y se desplome, en caso de utilizar refuerzos
+                  de hierro o para trabajos que requieran un estudio estructural
+                  puede contratar un profesional en el area.
+                </p>
+                <div class="guia_img">
+                  <img src="../img/calc/muro/guia_muro_5.png" />
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="contacto">
+          <p>
+            Guatemala, San Antonio Suchitepequez, 1.ª Calle, entre 2.ª y 3.ª
+            Avenida Zona 1 - Teléfono: +502 5961 1497
+            <a href="https://www.tiktok.com/@aaroldo86">
+              <img class="icono" src="../logo/icono_t.png" />
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../scripts/code.js"></script>
+    <script src="../scripts/blockU.js"></script>
+  </body>
+</html>

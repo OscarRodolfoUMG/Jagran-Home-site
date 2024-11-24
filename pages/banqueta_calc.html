@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructora JAGRAN</title>
+    <link rel="shortcut icon" href="../logo/icono_JAGRAN.jfif" />
+    <link rel="stylesheet" href="../estilo.css" />
+  </head>
+
+  <body>
+    <div class="background">
+      <img src="../img/casa3.jfif" alt="Fondo 1" style="opacity: 1" />
+      <img src="../img/casa2.jfif" alt="Fondo 2" />
+      <img src="../img/casa1.jfif" alt="Fondo 3" />
+    </div>
+
+    <div class="content">
+      <header>
+        <div class="logo">
+          <a href="index.html">
+            <img class="logobar" src="../logo/logobar_JAGRAN.jfif" alt="logo" />
+          </a>
+        </div>
+        <input class="check-m" type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <nav>
+          <ul>
+            <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="proyectos_index.html">Proyectos</a></li>
+            <li>
+              <a href="inicio_calculadora.html">Calculadora de Materiales</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <h1 class="titulo_">Banqueta de Concreto</h1>
+
+        <div class="cont_form">
+          <div class="contenedor_calc">
+            <h2 class="subtitulo_">Calculadora de Materiales</h2>
+
+            <form id="calculator-form">
+              <div class="form-group">
+                <label for="metros-cubicos">Metros Cúbicos a Construir:</label>
+                <input
+                  type="number"
+                  id="metros-cubicos"
+                  name="metros-cubicos"
+                  placeholder="Ejemplo: 100.00"
+                  required
+                />
+                <button class="calc_btn" type="button" id="calcular-btn">
+                  Calcular
+                </button>
+              </div>
+
+              <div class="result">
+                <div class="result-item">
+                  <p>Cemento:</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="cemento-result">0</span>
+                </div>
+
+                <div class="result-item">
+                  <p>Metro Cúbico Arena :</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="arena-result">0</span>
+                </div>
+
+                <div class="result-item">
+                  <p>Metro Cúbico Piedrin :</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="piedrin-result">0</span>
+                </div>
+              </div>
+            </form>
+
+            <div class="anuncio">
+              <h2>
+                Cotízalo con nosotros Constructora JAGRAN
+                <img class="icono_w" src="../logo/whatsapp-logo.png" />
+                +502 5961-1497
+              </h2>
+            </div>
+          </div>
+
+          <div class="contenedor_guia">
+            <h2 class="subtitulo_">Guia de Construcción</h2>
+
+            <div class="guia">
+              <ul>
+                <li class="sub-t">Materiales y herramientas necesarios:</li>
+
+                <li class="list">Tablas de madera para encofrar.</li>
+                <li class="list">Cemento.</li>
+                <li class="list">Arena.</li>
+                <li class="list">Piedrin.</li>
+                <li class="list">Cinta métrica.</li>
+                <li class="list">Nivel de burbuja.</li>
+                <li class="list">Hilo de Nylon.</li>
+                <li class="list">Martillo.</li>
+                <li class="list">Clavos o tornillos.</li>
+                <li class="list">Paleta y llana.</li>
+                <li class="list">Pala.</li>
+                <li class="list">Manguera de jardín.</li>
+                <li class="list">Guantes de trabajo y gafas de seguridad.</li>
+
+                <li class="sub-t">Planificación y preparación:</li>
+
+                <p>
+                  Determine la ubicación y el tamaño de la banqueta. Marque el
+                  área utilizando estacas e hilo de nylon para asegurarse de que
+                  la banqueta tenga el lugar y nivel adecuado.
+                </p>
+                <p>
+                  Excave una zanja para la base de la banqueta. Según las
+                  medidas de la banqueta, recordando que para una banqueta sin
+                  malla de hierro el largo de la misma sera 25 veces el grosor
+                  de la misma.
+                </p>
+
+                <div class="guia_img">
+                  <img
+                    src="../img/calc/banqueta/guia_banqueta_1.png"
+                    alt="Imagen_guia.jpg"
+                  />
+                </div>
+
+                <li class="sub-t">Encofrado:</li>
+                <p>
+                  Coloque tablones de madera a lo largo de los bordes de la
+                  zanja para crear el encofrado. Asegúrese de que estén
+                  nivelados y alineados con las marcas que hizo para la
+                  banqueta.
+                </p>
+                <div class="guia_img">
+                  <img
+                    src="../img/calc/banqueta/guia_banqueta_2.jpg"
+                    alt="Imagen_guia.jpg"
+                  />
+                </div>
+
+                <li class="sub-t">Mezcla de concreto:</li>
+                <p>
+                  Para mezclar el concreto primero se mezcla la proporcion de
+                  arena con cemento, en la forma tradicional se mezcla con pala
+                  hasta que al mezclar los materiales sean un solo color.
+                </p>
+
+                <div class="guia_img">
+                  <img
+                    src="../img/calc/banqueta/guia_banqueta_3.png"
+                    alt="Imagen_guia.jpg"
+                  />
+                </div>
+
+                <p>
+                  Posterior a esto se agrega piedrin al centro de la mezcla y se
+                  le aplica la debida parte de agua, se esperan unos minutos
+                  para que la mezcla de arena y cemento absorba parte del agua,
+                  al mezclarlo nuevamente obtenemos concreto.
+                </p>
+                <div class="guia_img">
+                  <img
+                    src="../img/calc/banqueta/guia_banqueta_4.png"
+                    alt="Imagen_guia.jpg"
+                  />
+                </div>
+
+                <li class="sub-t">Vierta y nivele el concreto:</li>
+                <p>
+                  Vierta el concreto en la zanja entre los tablones de
+                  encofrado. Use una paleta de albañil para extender y nivelar
+                  el concreto dentro del encofrado. Utilice un nivel de burbuja
+                  para asegurarse de que la superficie del concreto esté
+                  nivelada según lo requiera la banqueta.
+                </p>
+                <div class="guia_img">
+                  <img
+                    src="../img/calc/banqueta/guia_banqueta_5.jpg"
+                    alt="Imagen_guia.jpg"
+                  />
+                </div>
+                <p>
+                  Si desea puede alizar la superficie del concreto con una llana
+                  para obtener un acabado uniforme.
+                </p>
+                <p>
+                  Cubra la superficie del concreto con plástico o una lona para
+                  mantenerla húmeda durante al menos 3 días. Esto ayudará a que
+                  el concreto cure adecuadamente y evite que se agriete.
+                </p>
+
+                <div class="guia_img">
+                  <img
+                    src="../img/calc/banqueta/guia_banqueta_6.jfif"
+                    alt="Imagen_guia.jpg"
+                  />
+                </div>
+
+                <li class="sub-t">Retiro del encofrado:</li>
+
+                <p>
+                  Después de que el concreto haya curado, retire cuidadosamente
+                  los tablones de encofrado, recuerde que el concreto obtiene su
+                  máxima resistencia a las 24 días.
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="contacto">
+          <p>
+            Guatemala, San Antonio Suchitepequez, 1.ª Calle, entre 2.ª y 3.ª
+            Avenida Zona 1 - Teléfono: +502 5961 1497
+            <a href="https://www.tiktok.com/@aaroldo86">
+              <img class="icono" src="../logo/icono_t.png" />
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../scripts/banqueta.js"></script>
+    <script src="../scripts/code.js"></script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructora JAGRAN</title>
+    <link rel="shortcut icon" href="../logo/icono_JAGRAN.jfif" />
+    <link rel="stylesheet" href="../estilo.css" />
+  </head>
+
+  <body>
+    <div class="background">
+      <img src="../img/casa3.jfif" alt="Fondo 1" style="opacity: 1" />
+      <img src="../img/casa2.jfif" alt="Fondo 2" />
+      <img src="../img/casa1.jfif" alt="Fondo 3" />
+    </div>
+
+    <div class="content">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img class="logobar" src="../logo/logobar_JAGRAN.jfif" alt="logo" />
+          </a>
+        </div>
+        <input class="check-m" type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <nav>
+          <ul>
+            <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="proyectos_index.html">Proyectos</a></li>
+            <li>
+              <a href="inicio_calculadora.html">Calculadora de Materiales</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <h1 class="titulo_">Cielo Falso</h1>
+
+        <div class="cont_form">
+          <div class="contenedor_calc">
+            <h2 class="subtitulo_">Calculadora de Materiales</h2>
+
+            <form id="calculator-form">
+              <label for="metros-cuadrados"
+                >Ingrese medidas de ancho y largo a Instalar:</label
+              >
+              <div class="form-group">
+                <div class="doble_input">
+                  <input
+                    type="number"
+                    id="anchoMetrosCielo"
+                    name="anchoMetros"
+                    placeholder="Ejemplo: 100.00"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="largoMetrosCielo"
+                    name="largoMetros"
+                    placeholder="Ejemplo: 100.00"
+                    required
+                  />
+                </div>
+                <button class="calc_btn" type="button" id="calcular-btn">
+                  Calcular
+                </button>
+              </div>
+
+              <div class="result">
+                <div class="result-item">
+                  <p>Plancha:</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="plancha-result">0</span>
+                </div>
+
+                <div class="result-item">
+                  <p>Angular:</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="angular-result">0</span>
+                </div>
+
+                <div class="result-item">
+                  <p>Main Tee Estructural:</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="m-tee-result">0</span>
+                </div>
+
+                <div class="result-item">
+                  <p>Cross Tee Estructural:</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="c-tee-result">0</span>
+                </div>
+
+                <div class="result-item">
+                  <p>Tachuelon:</p>
+                </div>
+                <div class="result-item resp">
+                  <span id="tachuelon-result">0</span>
+                </div>
+              </div>
+            </form>
+
+            <div class="anuncio">
+              <h2>
+                Cotízalo con nosotros Constructora JAGRAN
+                <img class="icono_w" src="../logo/whatsapp-logo.png" />
+                +502 5961-1497
+              </h2>
+            </div>
+          </div>
+
+          <div class="contenedor_guia">
+            <h2 class="subtitulo_">Guia de Construcción</h2>
+
+            <div class="guia">
+              <ul>
+                <li class="sub-t">Materiales y herramientas necesarios:</li>
+
+                <li class="list">Placas de Thermoport (120cms x 60cms).</li>
+                <li class="list">
+                  Perfiles principales (main tee) de 12 pies (3.66 metros).
+                </li>
+                <li class="list">
+                  Perfiles transversales (cross tee) de 4 pies (1.22 metros).
+                </li>
+                <li class="list">
+                  Perfiles angulares de 10 pies (3.05 metros).
+                </li>
+                <li class="list">Ganchos de suspensión.</li>
+                <li class="list">Tijera para metal o Sierra para metal.</li>
+                <li class="list">Tachuelon para concreto.</li>
+                <li class="list">Martillo.</li>
+                <li class="list">Nivel de burbuja</li>
+                <li class="list">Cinta de métrica.</li>
+                <li class="list">Cuchilla para cortar.</li>
+                <li class="list">Gafas de seguridad y guantes.</li>
+
+                <li class="sub-t">Preparación y Medición:</li>
+
+                <p>
+                  Asegurar que la superficie de las paredes en las que colocara
+                  el angular esten limpias y libres de obstrucciones.
+                </p>
+                <p>
+                  Usa una cinta métrica para medir el área del techo donde
+                  deseas instalar el cielo falso. Marca los puntos de referencia
+                  en el techo con un lápiz o marcador no olvide revisar el nivel
+                  en cada pieza colocada.
+                </p>
+
+                <div class="guia_img">
+                  <img src="../img/calc/cielo/guia_cielo_1.png" />
+                </div>
+
+                <li class="sub-t">Fijar el perfil angular:</li>
+
+                <p>
+                  Fije los angulares en el contorno de la estructura, es decir,
+                  en las paredes donde planea colocar el cielo falso con apoyo
+                  de las marcar previamente colocadas.
+                </p>
+                <div class="guia_img">
+                  <img src="../img/calc/cielo/guia_cielo_2.png" />
+                </div>
+
+                <li class="sub-t">
+                  Instalación de perfiles principales (Main Tee):
+                </li>
+
+                <p>
+                  Instala los main tee de 3.66 metros a lo largo con apoto de
+                  ganchos de suspensión de ser necesario. Asegurese que estén
+                  nivelados y ajustados a la longitud necesaria. Para cortarlos,
+                  utiliza una sierra para metal o tijera para metal.
+                </p>
+
+                <div class="guia_img">
+                  <img src="../img/calc/cielo/guia_cielo_3.jfif" />
+                </div>
+
+                <li class="sub-t">Colocación de los cross tee:</li>
+
+                <p>
+                  Coloca los cross tee de 1.22 metros entre los main tee para
+                  formar una cuadrícula. Asegúrate de que estén alineados
+                  correctamente y que se crucen en ángulo recto. Ajusta la
+                  longitud de los cross tee si es necesario, cortándolos según
+                  sea necesario.
+                </p>
+                <div class="guia_img">
+                  <img src="../img/calc/cielo/guia_cielo_4.jfif" />
+                </div>
+
+                <li class="sub-t">
+                  Instalación de las planchas de thermoport:
+                </li>
+
+                <p>
+                  Coloca las planchas de thermoport en la cuadrícula formada por
+                  los main tee y cross tee. Asegúrate de que estén ajustadas y
+                  encajen correctamente. Puedes cortar las planchas de
+                  thermoport para que encajen en espacios irregulares utilizando
+                  una cuchilla afilada.
+                </p>
+
+                <div class="guia_img">
+                  <img src="../img/calc/cielo/guia_cielo_5.jpg" />
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="contacto">
+          <p>
+            Guatemala, San Antonio Suchitepequez, 1.ª Calle, entre 2.ª y 3.ª
+            Avenida Zona 1 - Teléfono: +502 5961 1497
+            <a href="https://www.tiktok.com/@aaroldo86">
+              <img class="icono" src="../logo/icono_t.png" />
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../scripts/code.js"></script>
+    <script src="../scripts/cielo.js"></script>
+  </body>
+</html>
