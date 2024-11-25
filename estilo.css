@@ -455,6 +455,7 @@ section p {
 /*--------------------------------------------------------------------------------------------------------*/
 .opcion {
   display: inline-block;
+  position: relative;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -467,6 +468,8 @@ section p {
   transition: .5s, color .10s;
 
   animation: slide-up 1s forwards;
+
+  z-index: 10;
 }
 
 .opcion:hover{
@@ -519,7 +522,7 @@ section p {
   position: relative;
   margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.6);
-  z-index: 20;
+  z-index: -1;
 
   animation: slide-up 1s forwards;
 }
@@ -846,6 +849,7 @@ footer {
   color: #fff;
   padding: 5px;
   width: 100%;
+  z-index: 20;
 }
 
 
@@ -879,7 +883,7 @@ footer {
     }
     50% {
         transform: translateY(0);
-        opacity: ;
+        /* opacity: ; */
     }
     100% {
         transform: translateY(0);
@@ -1001,4 +1005,52 @@ footer {
         display: block;
     }
 
+}
+
+@media (max-width: 414px) {
+  .proyecto{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .proyecto:first-child{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .font-inicio{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 1rem auto;
+    width: 90%;
+  }
+  .container:last-child{
+    margin-bottom: 3rem;
+  }
+  .container{
+    margin-bottom: 4rem;
+  }
+  .cont_form{
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  .contenedor_calc, .contenedor_guia{
+    width: 1rem;
+    margin: 1rem auto;
+  }
+  .form-group, .result, .anuncio{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    button{
+      margin: 1rem auto;
+    }
+  }
+  .opcion{
+    margin: 2% 25%;
+  }
+  .anuncio{
+    margin: 1rem auto;
+  }
 }
